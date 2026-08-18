@@ -203,7 +203,7 @@ const JOURNALS = {
    img: "assets/img/pubs/xxx.jpg" 를 추가하면 저널 타일 대신 그 그림이 썸네일로 쓰입니다. */
 const PUBS = [
   /* 2026 */
-  { y:2026, a:"Choi H, Kim C, Lim S, Min PH, Lee J, Jang DP", t:"Respiratory rate and minute ventilation independently modulate cardiovascular and autonomic responses in healthy adults", j:"Scientific Reports, 16", d:"10.1038/s41598-026-60600-z" },
+  { y:2026, a:"Choi H, Kim C, Lim S, Min PH, Lee J, Jang DP", t:"Respiratory rate and minute ventilation independently modulate cardiovascular and autonomic responses in healthy adults", j:"Scientific Reports, 16", d:"10.1038/s41598-026-60600-z", img:"assets/img/pubs/resp-ventilation.webp" },
   { y:2026, a:"Park CW, Choi Y, Lee HS, Jeong SH, Lee PH, Kim YJ, Sohn YH, Lee J, Chung SJ", t:"Amyloid-linked trajectories of cerebral hypoperfusion and dopamine loss in dementia with Lewy bodies", j:"Brain", d:"10.1093/brain/awag264", img:"assets/img/pubs/dlb-sustain.webp" },
   { y:2026, a:"Sun Y, Choi Y, Park CW, Na HK, Lee HS, Kim YJ, …, Chung SJ", t:"Spatiotemporal progression patterns of striatal dopamine depletion and cerebral hypoperfusion in Parkinson's disease", j:"Movement Disorders" , d:"10.1002/mds.70398", img:"assets/img/pubs/pd-dopamine-perfusion.webp" },
   { y:2026, a:"Ha J, Hwang HB, Kim H, Lee S, Lee J, Park JH, …, Kim IY", t:"Noninvasive detection of acute hyperglycemia using signal from wearable ECG sensors considering individual HRV response delays to glucose", j:"Biosensors, 16(5), 251" , d:"10.3390/bios16050251", img:"assets/img/pubs/hyperglycemia-ecg.webp" },
