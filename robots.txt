@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://REPLACE-WITH-YOUR-SITE-URL/sitemap.xml
+Sitemap: https://jeyeonlee.github.io/nerds-lab/sitemap.xml
