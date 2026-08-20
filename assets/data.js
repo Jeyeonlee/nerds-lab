@@ -144,6 +144,7 @@ const FUNDING = [
 /* ---------------- Gallery ----------------
    date("YYYY-MM") 기준으로 최신순 자동 정렬됩니다. 배열에 적는 순서는 신경 쓰지 않아도 됩니다. */
 const GALLERY = [
+  { src: "assets/img/gallery/labphoto2026.webp", date: "2026-08", caption: "Lab group photo" },
   { src: "assets/img/gallery/poster-award.webp",date: "2026-07", caption: "Excellent Poster Award — KOSOMBE 2026" },
   { src: "assets/img/gallery/aaic2026-award.webp", date: "2026-07", caption: "Student Best Poster Award, Lewy Body Dementias PIA — AAIC 2026, London" },
   { src: "assets/img/gallery/worldcup.webp",    date: "2026-06", caption: "Korea vs. South Africa World Cup viewing + lab social" },
