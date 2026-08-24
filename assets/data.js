@@ -87,6 +87,7 @@ const PI = {
 };
 
 const MEMBERS = [
+  { name: "Donghun Kang, PhD", role: "Post-doctoral fellow", photo: "assets/img/people/donghun-kang.webp" },
   { name: "Youngseok Choi", role: "PhD candidate", photo: "assets/img/people/youngseok-choi.webp" },
   { name: "Junyong Jang",   role: "PhD candidate", photo: "assets/img/people/junyong-jang.webp" },
   { name: "Jihee Choe",     role: "PhD candidate", photo: "assets/img/people/jihee-choe.webp" },
@@ -144,6 +145,9 @@ const FUNDING = [
 /* ---------------- Gallery ----------------
    date("YYYY-MM") 기준으로 최신순 자동 정렬됩니다. 배열에 적는 순서는 신경 쓰지 않아도 됩니다. */
 const GALLERY = [
+  { src: "assets/img/gallery/bordeaux-evening.webp", date: "2026-06", caption: "Evening in Bordeaux" },
+  { src: "assets/img/gallery/kosombe2025-fall.webp", date: "2025-11", caption: "KOSOMBE 2025 Fall Conference" },
+  { src: "assets/img/gallery/miccai2025.webp",       date: "2025-09", caption: "MICCAI 2025" },
   { src: "assets/img/gallery/labphoto2026.webp", date: "2026-08", caption: "Lab group photo" },
   { src: "assets/img/gallery/poster-award.webp",date: "2026-07", caption: "Excellent Poster Award — KOSOMBE 2026" },
   { src: "assets/img/gallery/aaic2026-award.webp", date: "2026-07", caption: "Student Best Poster Award, Lewy Body Dementias PIA — AAIC 2026, London" },
