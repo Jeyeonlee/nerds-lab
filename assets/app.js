@@ -133,7 +133,7 @@
         </div>
       </${tag}>`;
     });
-    html += `<p class="ifnote">Impact factors are shown for reference only and may not reflect the most recent JCR release.</p>`;
+    html += `<p class="ifnote">Journal impact factors are from the 2025 Journal Citation Reports (Clarivate), shown for reference only.</p>`;
     $('#pubList').innerHTML = html;
   }
   $('#years').addEventListener('click', e => {
