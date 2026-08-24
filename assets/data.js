@@ -156,6 +156,7 @@ const GALLERY = [
   { src: "assets/img/gallery/ohbm2.webp",       date: "2026-06", caption: "Lab dinner in Bordeaux" },
   { src: "assets/img/gallery/kosombe2026.webp", date: "2026-05", caption: "KOSOMBE 2026 Spring Conference" },
   { src: "assets/img/gallery/lab2.webp",        date: "2025-08", caption: "AAIC 2025" },
+  { src: "assets/img/gallery/aaic2025-toronto.webp", date: "2025-08", caption: "AAIC 2025 — evening by the Toronto waterfront" },
   { src: "assets/img/gallery/lab1.webp",        date: "2025-06", caption: "Best Poster Award — KOSOMBE 2025" },
   { src: "assets/img/gallery/teachersday.webp", date: "2025-05", caption: "Teachers' Day" },
   { src: "assets/img/gallery/kosombe2025.webp", date: "2025-05", caption: "KOSOMBE 2025 Spring Conference" },
