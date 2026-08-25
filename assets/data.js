@@ -92,10 +92,11 @@ const MEMBERS = [
   { name: "Junyong Jang",   role: "PhD candidate", photo: "assets/img/people/junyong-jang.webp" },
   { name: "Jihee Choe",     role: "PhD candidate", photo: "assets/img/people/jihee-choe.webp" },
   { name: "Kyoungmin Son",  role: "MS student",    photo: "assets/img/people/kyoungmin-son.webp" },
-  { name: "Gyubin Kim",     role: "MS student",    photo: "assets/img/people/gyubin-kim.webp" },
+  { name: "Gyubin Kim",     role: "Integrated MS–PhD student", photo: "assets/img/people/gyubin-kim.webp" },
   { name: "Jeong Hyeon Bae",role: "MS student",    photo: "assets/img/people/jeonghyeon-bae.webp" },
   { name: "Hongkeun Yoo, MD", role: "MS student",  photo: "assets/img/people/hongkeun-yoo.webp" },
   { name: "Hye Seo Kim",    role: "MS student",    photo: "assets/img/people/hyeseo-kim.webp" },
+  { name: "Junyoung Kim",  role: "Integrated MS–PhD student", photo: "assets/img/people/junyoung-kim.webp" },
   { name: "Yurim Choi",     role: "Undergraduate researcher", photo: "assets/img/people/yurim-choi.webp" }
 ];
 
