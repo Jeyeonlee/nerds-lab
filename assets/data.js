@@ -106,6 +106,7 @@ const ALUMNI = [
 /* ---------------- News ----------------
    date("YYYY.MM") 기준으로 최신순 자동 정렬됩니다. 배열에 적는 순서는 신경 쓰지 않아도 됩니다. */
 const NEWS = [
+  { date: "2026.08", text: "<strong>Junyong Jang</strong> published \"Alterations in regional cerebral perfusion in drug-induced Parkinsonism: spatial covariance analyses of early-phase <sup>18</sup>F-FP-CIT PET data\" in <em>Parkinsonism &amp; Related Disorders</em>." },
   { date: "2026.09", text: "The lab was awarded a <strong>보건복지부 한국형 ARPA-H</strong> grant for <em>CHAIN: 헬스케어 Agentic AI 통합 네트워크</em> (2026–2030)." },
   { date: "2026.07", text: "<strong>Youngseok Choi</strong> received the <strong>Student Best Poster Award</strong> from the ISTAART Lewy Body Dementias PIA at <strong>AAIC 2026</strong> (London, 12–15 July) for \"Visuospatial dysfunction and dementia risk in Parkinson's disease\"." },
   { date: "2026.08", text: "<strong>Yurim Choi</strong> published \"Amyloid-linked trajectories of cerebral hypoperfusion and dopamine loss in dementia with Lewy bodies\" in <em>Brain</em>. The paper was selected for <strong>BRIC 한빛사</strong> (Highlights of Korean Scientists)." },
@@ -181,7 +182,9 @@ const JOURNALS = {
   "Analytical Chemistry":                             { abbr:"ANCHEM", if:7.3  },
   "Biosensors":                                       { abbr:"BIOS",   if:6.2  },
   "Resuscitation":                                    { abbr:"RESUS",  if:6.0  },
+  "Biomedical Signal Processing and Control":         { abbr:"BSPC",   if:5.7  },
   "BMC Medical Informatics and Decision Making":      { abbr:"BMC",    if:5.5  },
+  "Parkinsonism & Related Disorders":                  { abbr:"PRD",    if:4.3  },
   "NeuroImage":                                       { abbr:"NIMG",   if:5.3  },
   "Scientific Reports":                               { abbr:"SREP",   if:4.9  },
   "Experimental Neurology":                           { abbr:"EXPN",   if:4.8  },
@@ -210,6 +213,9 @@ const JOURNALS = {
    img: "assets/img/pubs/xxx.jpg" 를 추가하면 저널 타일 대신 그 그림이 썸네일로 쓰입니다. */
 const PUBS = [
   /* 2026 */
+  { y:2026, a:"Yi MK, Lee J, Lee J, Kim IY", t:"Unsupervised diffusion framework for hypertension detection from photoplethysmography", j:"Biomedical Signal Processing and Control, 124, 110697", d:"10.1016/j.bspc.2026.110697", img:"assets/img/pubs/ppg-diffusion-hypertension.webp" },
+  { y:2026, a:"Chun MY, Jang J, Choi Y, Jeong SH, Kim YJ, Kim IY, Lee J, Chung SJ", t:"Alterations in regional cerebral perfusion in drug-induced Parkinsonism: spatial covariance analyses of early-phase 18F-FP-CIT PET data", j:"Parkinsonism & Related Disorders, 108938", d:"10.1016/j.parkreldis.2026.108938", img:"assets/img/pubs/dip-perfusion.webp" },
+  { y:2026, a:"Yi MK, Lee J, Lee J, Kim IY", t:"Personalized and explainable blood pressure estimation from PPG via hybrid CNN–morphological features", j:"IEEE Access", d:"10.1109/ACCESS.2026.3658724", img:"assets/img/pubs/ppg-bp-explainable.webp" },
   { y:2026, a:"Choi H, Kim C, Lim S, Min PH, Lee J, Jang DP", t:"Respiratory rate and minute ventilation independently modulate cardiovascular and autonomic responses in healthy adults", j:"Scientific Reports, 16", d:"10.1038/s41598-026-60600-z", img:"assets/img/pubs/resp-ventilation.webp" },
   { y:2026, a:"Park CW, Choi Y, Lee HS, Jeong SH, Lee PH, Kim YJ, Sohn YH, Lee J, Chung SJ", t:"Amyloid-linked trajectories of cerebral hypoperfusion and dopamine loss in dementia with Lewy bodies", j:"Brain", d:"10.1093/brain/awag264", img:"assets/img/pubs/dlb-sustain.webp" },
   { y:2026, a:"Sun Y, Choi Y, Park CW, Na HK, Lee HS, Kim YJ, …, Chung SJ", t:"Spatiotemporal progression patterns of striatal dopamine depletion and cerebral hypoperfusion in Parkinson's disease", j:"Movement Disorders" , d:"10.1002/mds.70398", img:"assets/img/pubs/pd-dopamine-perfusion.webp" },
@@ -220,6 +226,7 @@ const PUBS = [
   { y:2026, a:"Choi SH, Jang DH, Kim IY, Kim DG, Kim HE, Kang J, …, Lee J", t:"Cerebral blood flow estimation using NIRS in cardiac arrest patients: correlation with ROSC outcomes", j:"Resuscitation, 110997" , d:"10.1016/j.resuscitation.2026.110997", img:"assets/img/pubs/nirs-rosc.webp" },
 
   /* 2025 */
+  { y:2025, a:"Lee S, Hwang HB, Han I, Ha J, Yi MK, Lee J, Lee J, Kim IY", t:"Heart rate variability responses to acute stress as indicators of perceived stress and resilience", j:"IEEE Access, 13, 205978-205990", d:"10.1109/ACCESS.2025.3638371", img:"assets/img/pubs/hrv-stress-resilience.webp" },
   { y:2025, a:"Kim S, Kang D, Choi Y, Lee J, Lee J, Kim IY, Park E", t:"Effects of electrode placement on electrical stimulation for wound healing", j:"Scientific Reports, 15(1), 39043" , d:"10.1038/s41598-025-26070-5", img:"assets/img/pubs/wound-healing.webp" },
   { y:2025, a:"Satoh R, Utianski RL, Duffy JR, Clark HM, Stephens YC, Lee J, …, Whitwell JL", t:"Distinct 11C-ER176 PET neuroinflammatory profiles and tau colocalization in progressive apraxia of speech with and without Parkinson-plus syndrome", j:"Clinical Nuclear Medicine, 50(8), 731–742" , d:"10.1097/RLU.0000000000005962", img:"assets/img/pubs/er176-apraxia.webp" },
   { y:2025, a:"Ghatamaneni S, Coleman C, Shin I, Bruinsma T, Scott N, Lee J, …, Lowe VJ", t:"High resolution autoradiography of [18F]MK-6240 and [18F]Flortaucipir shows similar neurofibrillary tangle binding patterns preferentially recognizing middling neurofibrillary tangle maturity", j:"Acta Neuropathologica, 149(1), 26" , d:"10.1007/s00401-025-02864-9", img:"assets/img/pubs/autoradiography.webp" },
