@@ -97,7 +97,8 @@ const MEMBERS = [
   { name: "Hongkeun Yoo, MD", role: "MS student",  photo: "assets/img/people/hongkeun-yoo.webp" },
   { name: "Hye Seo Kim",    role: "MS student",    photo: "assets/img/people/hyeseo-kim.webp" },
   { name: "Junyoung Kim",  role: "Integrated MS–PhD student", photo: "assets/img/people/junyoung-kim.webp" },
-  { name: "Yurim Choi",     role: "Undergraduate researcher", photo: "assets/img/people/yurim-choi.webp" }
+  { name: "Yurim Choi",     role: "Undergraduate researcher", photo: "assets/img/people/yurim-choi.webp" },
+  { name: "Minjin Kim",     role: "Research Intern",         photo: "assets/img/people/minjin-kim.webp" }
 ];
 
 const ALUMNI = [
