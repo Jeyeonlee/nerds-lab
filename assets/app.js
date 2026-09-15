@@ -106,14 +106,33 @@
     return `<div class="pthumb" style="background:${jcolor(name)}" title="${esc(name)}">${esc(m ? m.abbr : autoAbbr(name))}</div>`;
   }
 
+  /* author line: PI name in bold, † = first author, * = corresponding author.
+     "Lee J" is matched exactly; when it appears twice, p.me (1 or 2) says which one is the PI. */
+  const PI_ABBR = 'Lee J';
+  function authors(p) {
+    const marks = (p.fa ? '&dagger;' : '') + (p.ca ? '*' : '');
+    let n = 0, want = p.me || 1;
+    return p.a.split(', ').map(tok => {
+      if (tok === PI_ABBR && ++n === want)
+        return `<b class="me">${esc(tok)}${marks ? `<sup>${marks}</sup>` : ''}</b>`;
+      return esc(tok);
+    }).join(', ');
+  }
+  const roleBadges = (p) =>
+    (p.fa ? '<span class="rb fa">First author</span>' : '') +
+    (p.ca ? '<span class="rb ca">Corresponding</span>' : '');
+  const roleWords = (p) => (p.fa ? ' first author' : '') + (p.ca ? ' corresponding author' : '');
+
   function renderPubs() {
     const term = q.trim().toLowerCase();
     const list = PUBS.filter(p =>
       (activeYear === 'all' || p.y === +activeYear) &&
-      (!term || (p.t + ' ' + p.a + ' ' + p.j).toLowerCase().includes(term)));
+      (!term || (p.t + ' ' + p.a + ' ' + p.j + roleWords(p)).toLowerCase().includes(term)));
     $('#pubCount').textContent = list.length + (list.length === 1 ? ' publication' : ' publications');
     if (!list.length) { $('#pubList').innerHTML = `<p class="nores">No publications match that search.</p>`; return; }
-    let html = '', last = null;
+    let html = `<p class="roleleg"><span><b class="me">${esc(PI_ABBR)}</b> = Jeyeon Lee</span>
+      <span><sup>&dagger;</sup> <span class="rb fa">First author</span></span>
+      <span><sup>*</sup> <span class="rb ca">Corresponding</span></span></p>`, last = null;
     list.forEach(p => {
       if (p.y !== last) { html += `<div class="pubyear">${p.y}</div>`; last = p.y; }
       const m = jmeta(p);
@@ -125,9 +144,9 @@
         ${thumb(p)}
         <div>
           <span class="t">${esc(p.t)}</span>
-          <span class="a">${esc(p.a)}</span>
+          <span class="a">${authors(p)}</span>
           <div class="jrow">
-            <span class="j">${esc(p.j)}</span>${badge}
+            <span class="j">${esc(p.j)}</span>${badge}${roleBadges(p)}
             ${href ? '<span class="ext">View paper &rarr;</span>' : ''}
           </div>
         </div>
