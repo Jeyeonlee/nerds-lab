@@ -130,9 +130,7 @@
       (!term || (p.t + ' ' + p.a + ' ' + p.j + roleWords(p)).toLowerCase().includes(term)));
     $('#pubCount').textContent = list.length + (list.length === 1 ? ' publication' : ' publications');
     if (!list.length) { $('#pubList').innerHTML = `<p class="nores">No publications match that search.</p>`; return; }
-    let html = `<p class="roleleg"><span><b class="me">${esc(PI_ABBR)}</b> = Jeyeon Lee</span>
-      <span><sup>&dagger;</sup> <span class="rb fa">First author</span></span>
-      <span><sup>*</sup> <span class="rb ca">Corresponding</span></span></p>`, last = null;
+    let html = '', last = null;
     list.forEach(p => {
       if (p.y !== last) { html += `<div class="pubyear">${p.y}</div>`; last = p.y; }
       const m = jmeta(p);
