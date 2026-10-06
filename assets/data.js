@@ -173,6 +173,7 @@ const GALLERY = [
 const JOURNALS = {
   "The Lancet":                                       { abbr:"LANCET", if:109.0 },
   "Nature Aging":                                     { abbr:"NatAge", if:25.0 },
+  "Nature Communications":                            { abbr:"NatCom", if:15.7 },
   "Science Advances":                                 { abbr:"SciAdv", if:13.9 },
   "Alzheimer's & Dementia":                           { abbr:"A&D",    if:12.8 },
   "Brain":                                            { abbr:"BRAIN",  if:12.6 },
@@ -185,11 +186,13 @@ const JOURNALS = {
   "Biosensors":                                       { abbr:"BIOS",   if:6.2  },
   "Resuscitation":                                    { abbr:"RESUS",  if:6.0  },
   "Biomedical Signal Processing and Control":         { abbr:"BSPC",   if:5.7  },
+  "Measurement":                                      { abbr:"MEAS",   if:5.6  },
   "BMC Medical Informatics and Decision Making":      { abbr:"BMC",    if:5.5  },
   "Parkinsonism & Related Disorders":                  { abbr:"PRD",    if:4.3  },
   "NeuroImage":                                       { abbr:"NIMG",   if:5.3  },
   "Scientific Reports":                               { abbr:"SREP",   if:4.9  },
   "Experimental Neurology":                           { abbr:"EXPN",   if:4.8  },
+  "IEEE Sensors Journal":                             { abbr:"JSEN",   if:4.3  },
   "IEEE Access":                                      { abbr:"IEEE",   if:4.2  },
   "Journal of Neural Engineering":                    { abbr:"JNE",    if:4.0  },
   "Sensors":                                          { abbr:"SENS",   if:4.0  },
@@ -217,7 +220,10 @@ const JOURNALS = {
    me:2 = 저자 목록에 "Lee J"가 두 번 나올 때 두 번째가 Jeyeon Lee인 경우(기본은 첫 번째). */
 const PUBS = [
   /* 2026 */
+  { y:2026, a:"Corriveau-Lecavalier N, Zhang G, Botha H, Barnard LR, Wiste HJ, Dicks E, Gogineni VR, Lee J, …, Jones DT", t:"A model of brain function to predict tau across Alzheimer's disease and related disorders", j:"Nature Communications", d:"10.1038/s41467-026-78300-7", img:"assets/img/pubs/natcomms-tau-model.webp" },
+  { y:2026, me:2, a:"Yi MK, Kim J, Lee J, Lee J, Kim IY", t:"Robust free-living arterial stiffness trend tracking from 25-Hz wearable photoplethysmography under motion artifacts and missingness", j:"Measurement, 292, 123175", d:"10.1016/j.measurement.2026.123175" },
   { y:2026, me:2, a:"Yi MK, Lee J, Lee J, Kim IY", t:"Unsupervised diffusion framework for hypertension detection from photoplethysmography", j:"Biomedical Signal Processing and Control, 124, 110697", d:"10.1016/j.bspc.2026.110697", img:"assets/img/pubs/ppg-diffusion-hypertension.webp" },
+  { y:2026, me:2, a:"Yi MK, Lee J, Lee J, Kim IY", t:"Personalized blood pressure estimation with a topological prior vector from minimal per-subject data", j:"IEEE Sensors Journal", d:"10.1109/JSEN.2026.3730879" },
   { y:2026, ca:true, a:"Chun MY, Jang J, Choi Y, Jeong SH, Kim YJ, Kim IY, Lee J, Chung SJ", t:"Alterations in regional cerebral perfusion in drug-induced Parkinsonism: spatial covariance analyses of early-phase 18F-FP-CIT PET data", j:"Parkinsonism & Related Disorders, 108938", d:"10.1016/j.parkreldis.2026.108938", img:"assets/img/pubs/dip-perfusion.webp" },
   { y:2026, me:2, a:"Yi MK, Lee J, Lee J, Kim IY", t:"Personalized and explainable blood pressure estimation from PPG via hybrid CNN–morphological features", j:"IEEE Access", d:"10.1109/ACCESS.2026.3658724", img:"assets/img/pubs/ppg-bp-explainable.webp" },
   { y:2026, a:"Choi H, Kim C, Lim S, Min PH, Lee J, Jang DP", t:"Respiratory rate and minute ventilation independently modulate cardiovascular and autonomic responses in healthy adults", j:"Scientific Reports, 16", d:"10.1038/s41598-026-60600-z", img:"assets/img/pubs/resp-ventilation.webp" },
