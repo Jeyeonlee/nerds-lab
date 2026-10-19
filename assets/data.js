@@ -109,6 +109,7 @@ const ALUMNI = [
    date("YYYY.MM") 기준으로 최신순 자동 정렬됩니다. 배열에 적는 순서는 신경 쓰지 않아도 됩니다. */
 const NEWS = [
   { date: "2026.08", text: "<strong>Junyong Jang</strong> published \"Alterations in regional cerebral perfusion in drug-induced Parkinsonism: spatial covariance analyses of early-phase <sup>18</sup>F-FP-CIT PET data\" in <em>Parkinsonism &amp; Related Disorders</em>." },
+  { date: "2026.10", text: "<strong>Donghun Kang</strong> (co-author) published \"Analysis of taVNS effects on baroreflex sensitivity and autonomic nervous system regulation during head-up tilt test\" in <em>Scientific Reports</em>." },
   { date: "2026.09", text: "The lab was awarded a <strong>보건복지부 한국형 ARPA-H</strong> grant for <em>CHAIN: 헬스케어 Agentic AI 통합 네트워크</em> (2026–2030)." },
   { date: "2026.07", text: "<strong>Youngseok Choi</strong> received the <strong>Student Best Poster Award</strong> from the ISTAART Lewy Body Dementias PIA at <strong>AAIC 2026</strong> (London, 12–15 July) for \"Visuospatial dysfunction and dementia risk in Parkinson's disease\"." },
   { date: "2026.08", text: "<strong>Yurim Choi</strong> published \"Amyloid-linked trajectories of cerebral hypoperfusion and dopamine loss in dementia with Lewy bodies\" in <em>Brain</em>. The paper was selected for <strong>BRIC 한빛사</strong> (Highlights of Korean Scientists)." },
@@ -220,6 +221,7 @@ const JOURNALS = {
    me:2 = 저자 목록에 "Lee J"가 두 번 나올 때 두 번째가 Jeyeon Lee인 경우(기본은 첫 번째). */
 const PUBS = [
   /* 2026 */
+  { y:2026, me:3, a:"Lee G, Kang D, Lee J, Lee J, Lee J, Kim IY", t:"Analysis of taVNS effects on baroreflex sensitivity and autonomic nervous system regulation during head-up tilt test", j:"Scientific Reports", d:"10.1038/s41598-026-75522-z" },
   { y:2026, a:"Corriveau-Lecavalier N, Zhang G, Botha H, Barnard LR, Wiste HJ, Dicks E, Gogineni VR, Lee J, …, Jones DT", t:"A model of brain function to predict tau across Alzheimer's disease and related disorders", j:"Nature Communications", d:"10.1038/s41467-026-78300-7", img:"assets/img/pubs/natcomms-tau-model.webp" },
   { y:2026, me:2, a:"Yi MK, Kim J, Lee J, Lee J, Kim IY", t:"Robust free-living arterial stiffness trend tracking from 25-Hz wearable photoplethysmography under motion artifacts and missingness", j:"Measurement, 292, 123175", d:"10.1016/j.measurement.2026.123175", img:"assets/img/pubs/ppg-arterial-stiffness.webp" },
   { y:2026, me:2, a:"Yi MK, Lee J, Lee J, Kim IY", t:"Unsupervised diffusion framework for hypertension detection from photoplethysmography", j:"Biomedical Signal Processing and Control, 124, 110697", d:"10.1016/j.bspc.2026.110697", img:"assets/img/pubs/ppg-diffusion-hypertension.webp" },
